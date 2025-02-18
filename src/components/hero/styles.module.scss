@@ -1,6 +1,10 @@
 @use "../../colors" as *;
 
 .hero {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 8px;
+  
   color: $white-normal;
   min-height: 80vh;
 

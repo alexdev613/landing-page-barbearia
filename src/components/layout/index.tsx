@@ -7,8 +7,8 @@ export function Layout() {
     <>
       <div className={styles.bgHome}>
         <Header />
-        <Outlet />
       </div>
+        <Outlet />
     </>
   )
 }

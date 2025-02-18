@@ -34,7 +34,7 @@ export function Header() {
         </div>
       </nav>
 
-      <Hero/>
+      <Hero />
 
     </header>
   )
