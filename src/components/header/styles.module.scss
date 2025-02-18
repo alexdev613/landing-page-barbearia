@@ -1,0 +1,84 @@
+@use "../../colors" as *;
+
+header {
+  width: 100%;
+}
+
+.headerContent {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon {
+  color: $white-normal;
+  font-size: 24px;
+}
+
+.headerIcons {
+  display: flex;
+  gap: 14px;
+}
+
+.headerIcons a:hover {
+  .icon {
+    animation: translateY 0.8s infinite alternate;
+    color: $red-light;
+  }
+}
+
+@keyframes translateY {
+  from {
+    transform: translateY(0) scale(1);
+  }
+  to {
+    transform: translateY(-8px) scale(1.15);
+  }
+}
+
+.headerButton {
+  border: 1px solid $white-normal;
+  padding: 8px 24px;
+  border-radius: 4px;
+  color: $white-normal;
+  background-color: transparent;
+  transition: background-color 0.8s;
+}
+
+.headerButton:hover {
+  border: 1px solid $red-light;
+  background-color: $red-light;
+}
+
+.headerLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 14px;
+}
+
+@media screen and (max-width: 768px) {
+  .headerContent {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .headerLogo img {
+    width: 160px;
+    margin-top: 46px;
+  }
+
+  .headerButton {
+    display: none;
+  }
+
+  .icon {
+    margin-top: 16px;
+    font-size: 34px;
+  }
+}

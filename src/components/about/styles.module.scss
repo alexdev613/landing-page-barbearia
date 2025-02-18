@@ -1,0 +1,43 @@
+@use "../../colors" as *;
+
+.about {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: $primary-normal;
+  overflow: hidden;
+  color: $white-normal;
+}
+
+.aboutContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 34px 8px 64px 18px;
+
+  img {
+    max-width: 560px;
+  }
+
+  .aboutContent div {
+    flex: 1;
+  }
+
+  .aboutDescription {
+    h2 {
+      font-size: 38px;
+      margin-bottom: 24px;
+    }
+
+    p {
+      margin-bottom: 14px;
+      line-height: 150%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .aboutContent {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,27 @@
+@use "../../_colors" as *;
+
+.container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+
+  background-color: $primary-normal;
+}
+
+button {
+  font-family: 'Sora', sans-serif;
+  cursor: pointer;
+}
+
+svg {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
