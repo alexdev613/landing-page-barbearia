@@ -1,0 +1,44 @@
+@use "../../colors" as *;
+
+.buttonWpp {
+  position: fixed;
+  bottom: 14px;
+  right: 24px;
+  z-index: 99;
+
+  img {
+    max-width: 72px;
+    transition: transform 0.4s;
+  }
+
+  img:hover {
+    transform: scale(1.12);
+  }
+}
+
+.buttonWpp .tooltipText {
+  visibility: hidden;
+  position: absolute;
+  position: 120px;
+  top: 8px;
+  left: -180px;
+  padding: 4px;
+  border-radius: 8px;
+  background-color: $black-normal;
+  color: $white-normal;
+  opacity: 0;
+  transition: opacity 0.825s;
+}
+
+.buttonWpp:hover .tooltipText {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .buttonWpp {
+    img {
+      max-width: 64px;
+    }
+  }
+}

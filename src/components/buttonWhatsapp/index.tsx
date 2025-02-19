@@ -1,18 +1,21 @@
 import { Link } from "react-router";
+import wpp from '../../assets/whatssapp.svg';
 import styles from './styles.module.scss';
 
-export function Hero() {
+export function ButtonWhatsapp() {
   return (
-    <main className={styles.hero}>
-      <h1>ESTILO É UM REFLEXO DA SUA ATITUDE E SUA PERSONALIDADE</h1>
-      <p>Horário de funcionamento: 09:00 às 19:00</p>
+    <>
       <Link
         to="https://api.whatsapp.com/send?phone=5587981157269&text=Gostaria%20de%20mais%20informações%20sobre%20seu%20trabalho%20de%20programação%20web"
-        className={styles.buttonContact}
         target="_blank"
+        className={styles.buttonWpp}
       >
-        Agendar horário
+        <img
+          src={wpp}
+          alt="Logo do Whatsapp"
+        />
+        <span className={styles.tooltipText}>Agende seu horário</span>
       </Link>
-    </main>
+    </>
   )
 }

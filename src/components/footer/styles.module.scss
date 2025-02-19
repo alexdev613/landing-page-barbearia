@@ -1,0 +1,22 @@
+@use "../../colors" as *;
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 54px 0;
+  gap: 24px;
+  color: $white-normal;
+}
+
+.footerIcons {
+  display: flex;
+  gap: 16px;
+}
+
+.icon {
+  margin-top: 16px;
+  font-size: 34px;
+  color: $white-normal;
+}
