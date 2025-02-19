@@ -9,13 +9,13 @@ export function Header() {
     <header>
       <nav className={styles.headerContent}>
         <div className={styles.headerIcons} data-aos="fade-down">
-          <Link to="/" className={styles.link}>
+          <Link to="https://www.facebook.com/" target='_blank' className={styles.link}>
             <FaFacebook className={styles.icon} />
           </Link>
-          <Link to="/" className={styles.link}>
+          <Link to="https://www.instagram.com/" target='_blank' className={styles.link}>
             <FaInstagram className={styles.icon}/>
           </Link>
-          <Link to="/" className={styles.link}>
+          <Link to="https://www.tiktok.com/" target='_blank' className={styles.link}>
             <FaTiktok className={styles.icon}/>
           </Link>
         </div>

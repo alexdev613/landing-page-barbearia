@@ -14,13 +14,13 @@ export function Footer() {
       ></iframe>
       <footer className={styles.footer}>
         <div className={styles.footerIcons}>
-          <Link to="/" className={styles.link}>
+          <Link to="https://www.facebook.com/" target='_blank' className={styles.link}>
             <FaFacebook className={styles.icon} />
           </Link>
-          <Link to="/" className={styles.link}>
+          <Link to="https://www.instagram.com/" target='_blank' className={styles.link}>
             <FaInstagram className={styles.icon} />
           </Link>
-          <Link to="/" className={styles.link}>
+          <Link to="https://www.tiktok.com/" target='_blank' className={styles.link}>
             <FaTiktok className={styles.icon} />
           </Link>
         </div>
@@ -33,6 +33,7 @@ export function Footer() {
         </div>
 
         <p>Copyright 2025 | Dev Barbearia - Todos direitos reservados.</p>
+        <p>Desenvolvido por Alex Nascimento</p>
 
       </footer>
     </>
