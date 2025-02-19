@@ -8,7 +8,7 @@ export function Header() {
   return (
     <header>
       <nav className={styles.headerContent}>
-        <div className={styles.headerIcons}>
+        <div className={styles.headerIcons} data-aos="fade-down">
           <Link to="/" className={styles.link}>
             <FaFacebook className={styles.icon} />
           </Link>
@@ -20,14 +20,17 @@ export function Header() {
           </Link>
         </div>
 
-        <div className={styles.headerLogo}>
+        <div className={styles.headerLogo} data-aos="fade-up" data-aos-delay="300" data-aos-duration="500">
           <img
             src={logo}
             alt="Logo da barbearia"
+            data-aos="flip-up"
+            data-aos-delay="300"
+            data-aos-duration="1000"
           />
         </div>
 
-        <div>
+        <div data-aos="fade-down">
           <Link
             to="https://api.whatsapp.com/send?phone=5587981157269&text=Gostaria%20de%20mais%20informações%20sobre%20seu%20trabalho%20de%20programação%20web"
             target='_blank'

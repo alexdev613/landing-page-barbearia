@@ -11,6 +11,8 @@ export function ButtonWhatsapp() {
         className={styles.buttonWpp}
       >
         <img
+          data-aos="zoon-in-up"
+          data-aos-delay="400"
           src={wpp}
           alt="Logo do Whatsapp"
         />

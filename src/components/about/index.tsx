@@ -6,16 +6,16 @@ export function About() {
     <section className={styles.about}>
       <div className={styles.aboutContent}>
         
-        <div>
+        <div data-aos="zoom-in-right" data-aos-delay="100">
           <img
             src={images}
             alt="Imagem sobre a barbearia"
           />
         </div>
 
-        <div className={styles.aboutDescription}>
+        <div className={styles.aboutDescription} data-aos="zoom-out-left" data-aos-delay="250" data-aos-duration="700">
           <h2>Sobre</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error accusamus quod at nesciunt. Ratione reiciendis tempore, laudantium optio, qui sint laborum fugit quaerat et tempora cupiditate? Error mollitia maiores ab?</p>
+          <p>Lorem ips dolor sit amet consectetur adipisicing elit. Error accusamus quod at nesciunt. Ratione reiciendis tempore, laudantium optio, qui sint laborum fugit quaerat et tempora cupiditate? Error mollitia maiores ab?</p>
           <p>Horário de funcionamento: <strong>09:00</strong> às <strong>19:00</strong></p>
         </div>
 

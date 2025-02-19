@@ -12,7 +12,7 @@ export function Services() {
       </div>
 
       <section className={styles.haircuts}>
-        <div className={styles.haircut}>
+        <div className={styles.haircut} data-aos="fade-up" data-aos-delay="150">
           <img
             src={corte1}
             alt="Corte Degrade"
@@ -25,7 +25,7 @@ export function Services() {
           </div>
         </div>
         
-        <div className={styles.haircut}>
+        <div className={styles.haircut} data-aos="fade-up" data-aos-delay="300"  data-aos-duration="500">
           <img
             src={corte2}
             alt="Corte Degrade"
@@ -38,7 +38,7 @@ export function Services() {
           </div>
         </div>
         
-        <div className={styles.haircut}>
+        <div className={styles.haircut} data-aos="fade-up" data-aos-delay="450" data-aos-duration="700">
           <img
             src={corte3}
             alt="Corte Degrade"
